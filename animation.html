@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        /* Bounce Animation */
+        .bounce {
+            background-color: #ff5733;
+            animation: bounce 1.5s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        /* Rotate Animation */
+        .rotate {
+            background-color: #33c3ff;
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Fade In-Out Animation */
+        .fade {
+            background-color: #85ff33;
+            animation: fade 3s infinite;
+        }
+        @keyframes fade {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+        /* Scale Animation */
+        .scale {
+            background-color: #ff33a8;
+            animation: scale 1.5s ease-in-out infinite;
+        }
+        @keyframes scale {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation Showcase</h1>
+    <div class="box bounce"></div>
+    <div class="box rotate"></div>
+    <div class="box fade"></div>
+    <div class="box scale"></div>
+</body>
+</html>
